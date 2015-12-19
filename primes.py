@@ -12,7 +12,7 @@ class PrimeClass(object):
         """
 
         for contador in range(2, num_int-1):
-            if (num_int%contador == 0):
+            if num_int%contador == 0:
                 return False
 
         return True  # Remove this dummy line
