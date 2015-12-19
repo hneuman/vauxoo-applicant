@@ -12,9 +12,8 @@ class PrimeClass(object):
         """
         con = 0
         for contador in range(1, num_int+1):
-            if (num_int%contador) == 0:
+            if (num_int % contador) == 0:
                 con = con + 1
-
         if con == 2:
             return True
         return False
