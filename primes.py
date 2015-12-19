@@ -10,9 +10,12 @@ class PrimeClass(object):
         """
         Your method documentation here
         """
+        con = 0
+        for contador in range(1, num_int+1):
+            if (num_int%contador) == 0:
+                con = con + 1
 
-        for contador in range(2, num_int-1):
-            if num_int%contador == 0:
-                return False
-
-        return True  # Remove this dummy line
+        if con == 2:
+            return True
+        return False
+        
