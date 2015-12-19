@@ -22,18 +22,18 @@ CREATE TABLE employee_hobby (
 
 
 
+ALTER TABLE employee_department   ADD id serial   PRIMARY KEY  NOT NULL;
+ALTER TABLE  employee_department   ADD name  CHAR(120) NOT NULL;
+ALTER TABLE  employee_department   ADD description  CHAR(120) NOT NULL;
+
 
 ALTER TABLE employee   ADD id serial   PRIMARY KEY  NOT NULL;
 ALTER TABLE  employee   ADD first_name  CHAR(120) NOT NULL;
 ALTER TABLE  employee   ADD last_name  CHAR(120) NOT NULL;
 ALTER TABLE  employee   ADD department_id integer ;
 ALTER TABLE  employee   ADD FOREIGN KEY (department_id) REFERENCES employee_department(id);
-ALTER TABLE  employee   ADD jefe CHAR(120) NOT NULL ;
+ALTER TABLE  employee   ADD jefe CHAR(120) ;
 
-
-ALTER TABLE employee   ADD id serial   PRIMARY KEY  NOT NULL;
-ALTER TABLE  employee   ADD first_name  CHAR(120) NOT NULL;
-ALTER TABLE  employee   ADD last_name  CHAR(120) NOT NULL;
 
 
 
