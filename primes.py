@@ -18,4 +18,3 @@ class PrimeClass(object):
         if con == 2:
             return True
         return False
-        
