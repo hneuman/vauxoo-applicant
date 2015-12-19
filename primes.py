@@ -13,8 +13,6 @@ class PrimeClass(object):
 
         for contador in range(2, num_int-1):
             if (num_int%contador == 0):
-            	print '%s %s'%(num_int,contador)
                 return False
 
-        print '%s '%(num_int)        
         return True  # Remove this dummy line
