@@ -3,10 +3,6 @@
 --       You can create database locally to test it.
 --       Consider add ';' at end sentence.
 
-CREATE ROLE hache WITH PASSWORD 'hache' LOGIN SUPERUSER;
-
-CREATE DATABASE employee_employee WITH OWNER hache;
-
 
 
 
