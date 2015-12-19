@@ -29,10 +29,6 @@ CREATE TABLE employee_department (
 
 
 
-
-
-
-
 INSERT INTO employee_department (name,description) VALUES ('tecnologia','departamento de tecnologia');
 INSERT INTO employee_department (name,description) VALUES ('almacen','departamento de almacen');
 INSERT INTO employee_department (name,description) VALUES ('gerencia','departamento de gerencia');
