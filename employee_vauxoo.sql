@@ -62,7 +62,6 @@ ALTER TABLE  employee_hobby   ADD name CHAR(120) NOT NULL;
 ALTER TABLE employee_hobby   ADD  description text;
 
 CREATE TABLE employee_hobby_relacion (
-	id serial    NOT NULL,
     employee_id integer REFERENCES employee (id),
     employee_hobby_id integer REFERENCES employee_hobby (id),
     PRIMARY KEY (employee_id, employee_hobby_id)
