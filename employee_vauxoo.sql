@@ -28,6 +28,7 @@ ALTER TABLE  employee   ADD first_name  CHAR(120) NOT NULL;
 ALTER TABLE  employee   ADD last_name  CHAR(120) NOT NULL;
 ALTER TABLE  employee   ADD department_id integer ;
 ALTER TABLE  employee   ADD FOREIGN KEY (department_id) REFERENCES employee_department(id);
+ALTER TABLE  employee   ADD jefe CHAR(120) NOT NULL ;
 
 
 ALTER TABLE employee   ADD id serial   PRIMARY KEY  NOT NULL;
@@ -85,11 +86,4 @@ INSERT INTO employee_hobby_relacion (employee_id,employee_hobby_id) VALUES ('4',
 
 
 
-ALTER TABLE  employee   ADD jefe CHAR(120) NOT NULL ;
-
-UPDATE  employee SET jefe='Jefe neuman' WHERE id='1';
-
-UPDATE  employee SET jefe='Jefe rivero' WHERE id='2';
-UPDATE  employee SET jefe='Jefe rivero' WHERE id='3';
-UPDATE  employee SET jefe='Jefe santiago' WHERE id='4';
 
